@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "carry-prices",
+	"version": "${version}",
+	"name": "Carry Prices",
+	"description": "Calculates dungeon carry prices and sends it to party chat.",
+	"authors": [
+		"ethfan922"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/carry-prices/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"name.carryprices.CarryPrices"
+		],
+		"client": [
+			"name.carryprices.client.CarryPricesClient"
+		]
+	},
+	"mixins": [
+		"carry-prices.mixins.json",
+		{
+			"config": "carry-prices.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
