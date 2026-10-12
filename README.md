@@ -6,6 +6,6 @@ For setup instructions, please see the [Fabric Documentation page](https://docs.
 
 ## Bleh
 
-Usage: /carry <floor> <amount> <score> [warp?]
+Usage: /carry (floor) (amount) (score) [warp?]
 
 Example: /carry f4 5 S+ ?
